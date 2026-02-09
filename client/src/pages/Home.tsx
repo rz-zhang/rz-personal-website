@@ -194,6 +194,12 @@ const PUBLICATIONS = [
   },
 ];
 
+const COMPANY_LOGOS: Record<string, string> = {
+  amazon: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663335159845/hJjPihvkpWeIPvXW.png",
+  microsoft: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663335159845/lyevUgNaQenBAzbA.png",
+  google: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663335159845/EndnZaGZWPZrKQGI.png",
+};
+
 const EXPERIENCES = [
   {
     role: "Applied Scientist Intern",
@@ -201,6 +207,7 @@ const EXPERIENCES = [
     location: "Palo Alto, CA",
     period: "May 2024 – Nov. 2024",
     hosts: "Chenwei Zhang, Xinyang Zhang",
+    logo: COMPANY_LOGOS.amazon,
   },
   {
     role: "Research Intern",
@@ -208,6 +215,7 @@ const EXPERIENCES = [
     location: "Redmond, WA",
     period: "Jan. 2024 – May 2024",
     hosts: "Shuohang Wang, Lucas Liu, Yelong Shen",
+    logo: COMPANY_LOGOS.microsoft,
   },
   {
     role: "Student Researcher",
@@ -215,6 +223,7 @@ const EXPERIENCES = [
     location: "New York City, NY",
     period: "May 2023 – Dec. 2023",
     hosts: "Jiaming Shen, Tianqi Liu, Jialu Liu",
+    logo: COMPANY_LOGOS.google,
   },
   {
     role: "Student Researcher",
@@ -222,6 +231,7 @@ const EXPERIENCES = [
     location: "New York City, NY",
     period: "May 2022 – Dec. 2022",
     hosts: "Jiaming Shen, Tianqi Liu, Michael Bendersky",
+    logo: COMPANY_LOGOS.google,
   },
 ];
 
@@ -782,18 +792,27 @@ function PaperCard({ paper }: { paper: { title: string; authors: string; venue: 
   );
 }
 
-function ExperienceCard({ exp }: { exp: { role: string; company: string; location: string; period: string; hosts: string } }) {
+function ExperienceCard({ exp }: { exp: { role: string; company: string; location: string; period: string; hosts: string; logo: string } }) {
   return (
     <div className="bg-background/80 rounded-lg p-5 border border-warm-border/60 hover:border-terracotta/30 transition-colors">
-      <div className="flex items-start justify-between gap-4 mb-1">
-        <h3 className="font-medium text-foreground">{exp.role}</h3>
-        <span className="text-sm text-terracotta font-medium whitespace-nowrap">{exp.period}</span>
+      <div className="flex items-start gap-4">
+        {/* Company Logo */}
+        <div className="w-12 h-12 rounded-lg bg-white border border-warm-border/40 flex items-center justify-center shrink-0 p-1.5 shadow-sm">
+          <img src={exp.logo} alt={exp.company} className="w-full h-full object-contain" />
+        </div>
+        {/* Content */}
+        <div className="flex-1">
+          <div className="flex items-start justify-between gap-4 mb-1">
+            <h3 className="font-medium text-foreground">{exp.role}</h3>
+            <span className="text-sm text-terracotta font-medium whitespace-nowrap">{exp.period}</span>
+          </div>
+          <p className="text-sm font-medium text-foreground/80 mb-1">{exp.company}</p>
+          <p className="text-sm text-muted-foreground">{exp.location}</p>
+          <p className="text-sm text-muted-foreground mt-2">
+            <span className="text-foreground/60">Host:</span> {exp.hosts}
+          </p>
+        </div>
       </div>
-      <p className="text-sm font-medium text-foreground/80 mb-1">{exp.company}</p>
-      <p className="text-sm text-muted-foreground">{exp.location}</p>
-      <p className="text-sm text-muted-foreground mt-2">
-        <span className="text-foreground/60">Host:</span> {exp.hosts}
-      </p>
     </div>
   );
 }
