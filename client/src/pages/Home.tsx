@@ -18,14 +18,8 @@ const RESEARCH_BG = "/images/research-pattern.jpg";
 // ─── Inline SVG Company Logos ───
 function AmazonLogo({ className = "" }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 603 182" fill="#232F3E" xmlns="http://www.w3.org/2000/svg">
-      <path d="M374.00 109.24C338.82 135.21 287.55 149.00 243.60 149.00C182.33 149.00 127.24 127.06 85.38 90.72C82.16 87.83 85.02 83.87 88.88 86.19C134.06 112.41 189.91 128.20 247.75 128.20C286.71 128.20 329.42 120.36 368.74 104.17C374.59 101.72 379.49 107.99 374.00 109.24Z"/>
-      <path d="M388.13 93.07C383.82 87.59 359.31 90.50 348.25 91.82C344.93 92.21 344.43 89.30 347.42 87.21C367.05 73.44 399.82 77.47 403.52 82.02C407.23 86.60 402.49 119.45 384.16 134.82C381.37 137.19 378.72 135.93 379.97 132.84C384.16 122.36 392.47 98.58 388.13 93.07Z"/>
-      <path d="M349.00 15.00V4.68C349.00 3.02 350.27 1.89 351.77 1.89H413.22C414.79 1.89 416.06 3.05 416.06 4.68V13.64C416.03 15.23 414.69 17.31 412.36 20.53L380.26 66.08C391.73 65.80 403.83 67.55 414.22 73.40C416.52 74.69 417.16 76.58 417.33 78.17V89.14C417.33 90.76 415.53 92.65 413.66 91.69C393.77 81.28 367.41 80.17 345.39 91.82C343.66 92.72 341.83 90.86 341.83 89.24V78.78C341.83 76.95 341.86 73.73 343.69 70.95L380.90 18.68H351.80C350.24 18.68 348.97 17.55 348.97 15.93L349.00 15.00Z"/>
-      <path d="M124.56 93.96H105.59C104.19 93.86 103.09 92.80 102.99 91.47V4.81C102.99 3.32 104.26 2.12 105.82 2.12H123.52C124.96 2.19 126.09 3.29 126.19 4.65V14.44H126.46C130.63 3.82 136.95 0.00 145.46 0.00C154.10 0.00 159.82 3.82 164.72 14.44C168.86 3.82 176.47 0.00 184.58 0.00C190.30 0.00 196.62 2.52 200.49 7.87C204.86 13.88 203.96 22.44 203.96 29.88L203.93 91.23C203.93 92.72 202.66 93.96 201.10 93.96H182.16C180.69 93.86 179.52 92.66 179.52 91.23V39.14C179.52 36.26 179.79 29.18 179.22 26.43C178.32 21.82 175.55 20.52 172.08 20.52C169.08 20.52 165.95 22.51 164.55 25.73C163.15 28.95 163.28 34.26 163.28 39.14V91.23C163.28 92.72 162.01 93.96 160.45 93.96H141.51C140.01 93.86 138.87 92.66 138.87 91.23L138.84 39.14C138.84 30.58 140.34 20.35 129.73 20.35C119.02 20.35 119.39 30.28 119.39 39.14V91.23C119.39 92.72 118.12 93.96 116.56 93.96H124.56Z" transform="translate(-16.56, 0)"/>
-      <path d="M448.00 0.00C470.62 0.00 483.00 20.35 483.00 46.28C483.00 71.41 469.42 91.23 448.00 91.23C425.68 91.23 413.43 70.88 413.43 45.58C413.43 20.15 425.78 0.00 448.00 0.00ZM448.10 16.52C437.16 16.52 436.56 31.28 436.56 40.54C436.56 49.83 436.43 74.58 448.00 74.58C459.44 74.58 460.00 58.72 460.00 49.00C460.00 42.62 459.74 35.01 457.84 28.95C456.21 23.67 453.21 16.52 448.10 16.52Z"/>
-      <path d="M517.00 93.96H498.09C496.62 93.86 495.45 92.66 495.45 91.23L495.42 4.55C495.55 3.19 496.82 2.12 498.29 2.12H515.89C517.16 2.19 518.20 3.05 518.50 4.18V15.73H518.77C523.24 4.35 528.66 0.00 538.40 0.00C544.72 0.00 550.91 2.22 555.08 8.57C558.95 14.44 558.95 24.67 558.95 31.82V91.56C558.75 92.83 557.48 93.86 556.12 93.86H537.05C535.78 93.76 534.74 92.76 534.58 91.56V37.96C534.58 29.58 535.48 20.18 526.34 20.18C523.34 20.18 520.57 22.18 519.07 25.26C517.17 29.18 516.90 33.08 516.90 37.96V91.23C516.87 92.72 515.56 93.96 514.00 93.96H517.00Z" transform="translate(-3, 0)"/>
-      <path d="M268.00 51.42C268.00 57.60 268.17 62.78 265.07 68.32C262.57 72.82 258.57 75.60 254.14 75.60C248.01 75.60 244.48 70.88 244.48 63.97C244.48 50.42 256.50 47.88 268.00 47.88V51.42ZM289.12 93.69C287.99 94.69 286.35 94.76 285.09 94.09C279.46 89.38 278.46 87.28 275.56 83.06C267.22 91.59 261.30 94.09 250.36 94.09C237.48 94.09 227.50 86.25 227.50 70.42C227.50 58.09 234.22 49.83 243.86 45.81C252.27 42.22 264.29 41.59 268.00 41.09V39.14C268.00 35.26 268.27 30.68 266.07 27.29C264.17 24.27 260.44 23.01 257.17 23.01C251.10 23.01 245.68 26.13 244.41 32.61C244.18 33.88 243.24 35.14 241.97 35.21L223.60 33.22C222.47 32.95 221.20 32.05 221.54 30.35C225.67 8.87 245.24 2.12 262.87 2.12C271.81 2.12 283.43 4.35 290.45 11.17C299.39 19.53 298.59 30.58 298.59 42.75V68.02C298.59 76.58 302.16 80.38 305.52 85.09C306.69 86.72 306.92 88.68 305.45 89.91C301.82 92.96 295.40 98.50 291.87 101.58L289.12 93.69Z" transform="translate(-2, -7)"/>
+    <svg className={className} viewBox="0 0 448 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M257.2 162.7c-48.7 1.8-169.5 15.5-169.5 117.5 0 109.5 138.3 114 183.5 43.2 6.5 10.2 35.4 37.5 45.3 46.8l56.8-56S341 288.9 341 261.4V114.3C341 89 316.5 32 228.7 32 140.7 32 94 87 94 136.3l73.5 6.8c16.3-49.5 54.2-49.5 54.2-49.5 40.7-.1 35.5 29.8 35.5 69.1zm0 86.8c0 80-84.2 68-84.2 17.2 0-47.2 50.5-56.7 84.2-57.8v40.6zm136 163.5c-7.7 10-70 67-174.5 67S34.2 408.5 9.7 379c-6.8-7.7 1-11.3 5.5-8.3C88.5 415.2 203 488.5 387.7 401c7.5-3.7 13.3 2 5.5 12zm39.8 2.2c-6.5 15.8-16 26.8-21.2 31-5.5 4.5-9.5 2.7-6.5-3.8s19.3-46.5 12.7-55c-6.5-8.3-37-4.3-48-3.2-10.8 1-13 2-14-.3-2.3-5.7 21.7-15.5 37.5-17.5 15.7-1.8 41-.8 46 5.7 3.7 5.1 0 27.1-6.5 43.1z"/>
     </svg>
   );
 }
@@ -45,7 +39,8 @@ function GoogleLogo({ className = "" }: { className?: string }) {
 
 function MicrosoftLogo({ className = "" }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg"
+      style={{ width: '0.9em', height: '0.9em' }}>
       <rect x="1" y="1" width="10" height="10" fill="#f25022"/>
       <rect x="12" y="1" width="10" height="10" fill="#7fba00"/>
       <rect x="1" y="12" width="10" height="10" fill="#00a4ef"/>
@@ -118,25 +113,43 @@ const PREPRINTS = [
     authors: "Rongzhi Zhang*, Liqin Ye*, Yuzhao Heng, Xiang Chen, Tong Yu, Lingkai Kong, Sudheer Chava and Chao Zhang.",
     venue: "An arXiv version will be available soon.",
     year: "2025",
-    url: "",
+    first: true,
+    url: "https://arxiv.org/html/2510.12121v1",
   },
   {
-    title: "MLE-Dojo: Interactive Environments for Empowering LLM Agents in Machine Learning Engineering",
-    authors: "Rushi Qiang, Yuchen Zhuang, Yinghao Li, Rongzhi Zhang, Changhao Li, Ian Shu-Hei Wong, Sherry Yang, Percy Liang, Chao Zhang and Bo Dai.",
+    title: "Instant Personalized Large Language Model Adaptation via Hypernetwork",
+    authors: "Zhaoxuan Tan, Zixuan Zhang, Haoyang Wen, Zheng Li, Rongzhi Zhang, Pei Chen, Fengran Mo, Zheyuan Liu, Qingkai Zeng, Qingyu Yin and Meng Jiang.",
     venue: "Preprint on ArXiv, 2025.",
     year: "2025",
-    url: "https://arxiv.org/pdf/2505.07782",
+    first: false,
+    url: "https://arxiv.org/pdf/2510.16282",
+  },
+  {
+    title: "HeaPA: Difficulty-Aware Heap Sampling and On-Policy Query Augmentation for LLM Reinforcement Learning",
+    authors: "Weiqi Wang, Xin Liu, Binxuan Huang, Hejie Cui, Rongzhi Zhang, Changlong Yu, Shuowei Jin, Jingfeng Yang, Qingyu Yin, Zhengyang Wang, Zheng Li, Yifan Gao, Priyanka Nigam, Bing Yin, Lihong Li, Yangqiu Song",
+    venue: "Preprint on ArXiv.",
+    year: "2026",
+    first: false,
+    url: "https://arxiv.org/pdf/2601.22448",
   },
 ];
 
 const PUBLICATIONS = [
   {
+    title: "MLE-Dojo: Interactive Environments for Empowering LLM Agents in Machine Learning Engineering",
+    authors: "Rushi Qiang, Yuchen Zhuang, Yinghao Li, Rongzhi Zhang, Changhao Li, Ian Shu-Hei Wong, Sherry Yang, Percy Liang, Chao Zhang and Bo Dai.",
+    venue: "NeurIPS",
+    year: "2025",
+    first: false,
+    url: "https://openreview.net/pdf?id=5W5mFU4oMO",
+  },
+  {
     title: "DORM: Preference Data Weights Optimization for Reward Modeling in LLM Alignment",
     authors: "Rongzhi Zhang, Chenwei Zhang, Xinyang Zhang, Liang Qiu, Haoming Jiang, Yuchen Zhuang, Qingru Zhang, Hyokun Yun, Xian Li, Bing Yin, Tuo Zhao, Chao Zhang.",
-    venue: "EMNLP",
+    venue: "EMNLP Findings",
     year: "2025",
     first: true,
-    url: "",
+    url: "https://aclanthology.org/2025.findings-emnlp.1237.pdf",
   },
   {
     title: "Self-Rewarding PPO: Aligning Large Language Models with Demonstrations Only",
@@ -144,7 +157,7 @@ const PUBLICATIONS = [
     venue: "COLM",
     year: "2025",
     first: false,
-    url: "",
+    url: "https://arxiv.org/pdf/2510.21090",
   },
   {
     title: "Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training",
@@ -380,7 +393,7 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Contact Info */}
+            /* {/* Contact Info */}
             <div className="space-y-3 mb-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-terracotta shrink-0" />
@@ -396,7 +409,7 @@ export default function Home() {
                 <MapPin className="w-4 h-4 text-terracotta shrink-0" />
                 <span>756 W Peachtree St NW, Atlanta, GA 30308</span>
               </div>
-            </div>
+            </div> */
 
             {/* Social Links */}
             <div className="flex items-center gap-3 mb-8">
@@ -473,12 +486,12 @@ export default function Home() {
 
               <AnimatedSection>
                 <FadeIn>
-                  <h2 className="text-2xl lg:text-3xl font-serif text-foreground mb-6">Biography</h2>
+                  <h2 className="text-2xl lg:text-3xl font-serif text-foreground mb-6">About Me</h2>
                 </FadeIn>
                 <FadeIn>
                   <p className="text-base lg:text-lg leading-relaxed text-foreground/85 max-w-3xl mb-4">
                     I work on end-to-end LLM post-training at{" "}
-                    <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Amazon</a>,
+                    <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Amazon Rufus Team</a>,
                     focusing on scalable data synthesis and reinforcement learning.
                   </p>
                 </FadeIn>
@@ -486,10 +499,10 @@ export default function Home() {
                   <p className="text-base lg:text-lg leading-relaxed text-foreground/85 max-w-3xl mb-4">
                     I obtained my Ph.D. in Machine Learning from Georgia Tech{" "}
                     <a href="http://ml.gatech.edu/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">(ML@GT)</a>{" "}
-                    in May 2025, advised by{" "}
+                    in 2025, advised by{" "}
                     <a href="http://chaozhang.org/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Prof. Chao Zhang</a>.
-                    My research interest primarily lies in model efficiency and data efficiency of language models.
-                    During my Ph.D., I spent several fantastic research internships at{" "}
+                    My research centers on model efficiency and data efficiency for language models.
+                    During my Ph.D., I interned at{" "}
                     <a href="https://research.google/" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Google Research</a>,{" "}
                     <a href="https://www.microsoft.com/en-us/research/" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Microsoft Azure AI</a>, and{" "}
                     <a href="https://www.aboutamazon.com/news/retail/amazon-rufus" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Amazon Stores Foundational AI</a>.
@@ -497,9 +510,9 @@ export default function Home() {
                 </FadeIn>
                 <FadeIn>
                   <p className="text-base lg:text-lg leading-relaxed text-foreground/85 max-w-3xl">
-                    Before that, I obtained my bachelor's degree from{" "}
+                    I received my B.E. from{" "}
                     <a href="http://www.zju.edu.cn/english/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Zhejiang University</a>,
-                    and I spent my senior year as a visiting student researcher at{" "}
+                    and I spent my senior year as a visiting researcher at{" "}
                     <a href="https://hms.harvard.edu/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Harvard Medical School</a>.
                   </p>
                 </FadeIn>
