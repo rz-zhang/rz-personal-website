@@ -393,7 +393,7 @@ export default function Home() {
               </p>
             </div>
 
-            /* {/* Contact Info */}
+            {/* {/* Contact Info */}
             <div className="space-y-3 mb-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-terracotta shrink-0" />
@@ -409,7 +409,7 @@ export default function Home() {
                 <MapPin className="w-4 h-4 text-terracotta shrink-0" />
                 <span>756 W Peachtree St NW, Atlanta, GA 30308</span>
               </div>
-            </div> */
+            </div> */}
 
             {/* Social Links */}
             <div className="flex items-center gap-3 mb-8">
@@ -523,7 +523,7 @@ export default function Home() {
             </div>
           </section>
 
-          /* {/* Research Section */}
+          {/* {/* Research Section */}
           <section
             id="research"
             className="relative overflow-hidden"
@@ -571,7 +571,7 @@ export default function Home() {
                 </div>
               </AnimatedSection>
             </div>
-          </section> */
+          </section> */}
 
           {/* Publications Section */}
           <section
