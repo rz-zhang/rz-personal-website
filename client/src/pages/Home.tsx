@@ -333,16 +333,16 @@ const TEACHING = [
   { course: "CS 4641/7641 - Machine Learning", semester: "Fall 2020", school: "Georgia Tech", url: "https://mahdi-roozbahani.github.io/CS46417641-fall2020/#" },
 ];
 
-const SERVICE_AC = [{ venue: "ACL Rolling Review", year: "2025" }];
+const SERVICE_AC = [{ venue: "ACL Rolling Review", year: "2025 - " }];
 const SERVICE_REVIEWER = [
-  { venue: "EMNLP", year: "2022 – Present" },
-  { venue: "ACL", year: "2022 – Present" },
-  { venue: "ACL Rolling Review", year: "2023 – Present" },
-  { venue: "KDD", year: "2023 – Present" },
-  { venue: "NeurIPS", year: "2023 – Present" },
-  { venue: "ICML", year: "2024 – Present" },
-  { venue: "ICLR", year: "2024 – Present" },
-  { venue: "COLM", year: "2025" },
+  { venue: "EMNLP", year: "2022 – " },
+  { venue: "ACL", year: "2022 – " },
+  { venue: "ACL Rolling Review", year: "2023 – " },
+  { venue: "KDD", year: "2023 – " },
+  { venue: "NeurIPS", year: "2023 – " },
+  { venue: "ICML", year: "2024 – " },
+  { venue: "ICLR", year: "2024 – " },
+  { venue: "COLM", year: "2025 - " },
 ];
 
 export default function Home() {
