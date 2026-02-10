@@ -393,8 +393,8 @@ export default function Home() {
               </p>
             </div>
 
-            {/* {/* Contact Info */}
-            <div className="space-y-3 mb-8 text-sm text-muted-foreground">
+            {/* Contact Info */}
+            {/* <div className="space-y-3 mb-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-terracotta shrink-0" />
                 <a href="mailto:rongzhi.zhang@gatech.edu" className="hover:text-terracotta transition-colors">
@@ -523,8 +523,8 @@ export default function Home() {
             </div>
           </section>
 
-          {/* {/* Research Section */}
-          <section
+          {/* Research Section */}
+          {/* <section
             id="research"
             className="relative overflow-hidden"
             style={{ scrollMarginTop: "80px" }}
@@ -771,7 +771,7 @@ export default function Home() {
                 </FadeIn>
                 <FadeIn>
                   <p className="text-foreground/80 leading-relaxed">
-                    I enjoy watching FC Barcelona matches and cheering for <span className="line-through text-foreground/40">Nadal</span> Alcaraz on the tennis court.
+                    I enjoy watching FC Barcelona matches and cheering for <span className="line-through text-foreground/40">R. Nadal</span> C. Alcaraz on the tennis court.
                   </p>
                 </FadeIn>
               </div>
