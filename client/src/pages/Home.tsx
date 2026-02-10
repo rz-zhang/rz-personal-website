@@ -9,11 +9,11 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { Mail, MapPin, Building2, ExternalLink, GraduationCap, Briefcase, BookOpen, Users, ChevronUp, Github, Linkedin, Twitter } from "lucide-react";
 
-const PROFILE_PHOTO = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663335159845/egmpAxZhLCUfANhF.jpeg";
+const PROFILE_PHOTO = "/images/profile.jpeg";
 
-const HERO_BG = "https://private-us-east-1.manuscdn.com/sessionFile/Pca2oVq2I5DVn7TH8OBGNR/sandbox/zUI5V4hl2GLhf7wscDA6FE-img-1_1770678931000_na1fn_aGVyby1iZw.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvUGNhMm9WcTJJNURWbjdUSDhPQkdOUi9zYW5kYm94L3pVSTVWNGhsMkdMaGY3d3NjREE2RkUtaW1nLTFfMTc3MDY3ODkzMTAwMF9uYTFmbl9hR1Z5YnkxaVp3LmpwZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=QuxuiOk2mhNRIOgYBUkkM-rYlIN~9m9EsMsL8~X2dz7rUAbNlyIfIoDH3LiyX2bUjvMgc8dKfJiKrDade5ZukTOyl6RgeHpO4UvaT35RsfW3tisVzdrZm3olquIrERIt-pVR2LLBCNZA-UXKtUiPqizqLJIuss0NRTCwJyBNueCQ0ne5ol57zc9URp47LBJV0izlNHrwEDys2AzERJvgf-oGltQidxmHIJgR0O0oXixmGi7R8E217E4DZIiFDy29VqnVxT~tWE90EEL53QH2yllJQssCUOwrLzEaIyV30Rymozc0tehnVx3HqNBdFlyYzGcPXHgXeJv2HXxIAot22A__";
+const HERO_BG = "/images/hero-bg.jpg";
 
-const RESEARCH_BG = "https://private-us-east-1.manuscdn.com/sessionFile/Pca2oVq2I5DVn7TH8OBGNR/sandbox/zUI5V4hl2GLhf7wscDA6FE-img-2_1770678927000_na1fn_cmVzZWFyY2gtcGF0dGVybg.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvUGNhMm9WcTJJNURWbjdUSDhPQkdOUi9zYW5kYm94L3pVSTVWNGhsMkdMaGY3d3NjREE2RkUtaW1nLTJfMTc3MDY3ODkyNzAwMF9uYTFmbl9jbVZ6WldGeVkyZ3RjR0YwZEdWeWJnLmpwZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=CTIP7sMRWBrxsq8~p4yoGdMcG421GmPt7TOoG4Igcl1Pzsw6COLUBYdcMvuG2N37SLPQ0s7rRPcgWq9NMq7~uP-Q8U3QnfxAuaX5Y4R4PYLnc87ErdBawq7sYWEAqCD-r4nixra8e7uIXOQ5vEcgEakpzCNpLSWjy2FFRgWsRvJ6~OG4MhKByuYnFztZIReuV9pKsHoazftPgOYTE5VWdHRNCy5xWBPMm7oV83YN8DO8yRwl95NFMPEWdhKjC9O0JqwqinWomhCKwoE2MY5ucy59rjpj9mzkq39ffBvSZ5PgTLrEABbfk8cGio8UTF7F7D0qdEIucg-lDtUzZ0pIKg__";
+const RESEARCH_BG = "/images/research-pattern.jpg";
 
 // ─── Inline SVG Company Logos ───
 function AmazonLogo({ className = "" }: { className?: string }) {
