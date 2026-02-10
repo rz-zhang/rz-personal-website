@@ -106,6 +106,7 @@ const NAV_ITEMS = [
   { id: "research", label: "Research" },
   { id: "publications", label: "Publications" },
   { id: "experience", label: "Experience" },
+  { id: "education", label: "Education" },
   { id: "teaching", label: "Teaching" },
   { id: "service", label: "Service" },
 ];
@@ -372,10 +373,9 @@ export default function Home() {
                 <img src={PROFILE_PHOTO} alt="Rongzhi Zhang" className="w-full h-full object-cover" />
               </div>
               <h1 className="text-3xl xl:text-4xl font-serif text-foreground mb-2">Rongzhi Zhang</h1>
-              <p className="text-base text-terracotta font-medium mb-1">Ph.D. Candidate</p>
+              <p className="text-base text-terracotta font-medium mb-1">Applied Scientist, Amazon</p>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Machine Learning Center<br />
-                School of Computational Science and Engineering<br />
+                Ph.D. in Machine Learning<br />
                 Georgia Institute of Technology
               </p>
             </div>
@@ -459,9 +459,9 @@ export default function Home() {
                   <img src={PROFILE_PHOTO} alt="Rongzhi Zhang" className="w-full h-full object-cover" />
                 </div>
                 <h1 className="text-3xl font-serif text-foreground mb-1">Rongzhi Zhang</h1>
-                <p className="text-base text-terracotta font-medium mb-1">Ph.D. Candidate</p>
+                <p className="text-base text-terracotta font-medium mb-1">Applied Scientist, Amazon</p>
                 <p className="text-sm text-muted-foreground">
-                  Machine Learning Center, Georgia Institute of Technology
+                  Ph.D. in Machine Learning, Georgia Institute of Technology
                 </p>
                 <div className="flex items-center gap-2 mt-3 text-sm text-muted-foreground">
                   <Mail className="w-3.5 h-3.5 text-terracotta" />
@@ -477,11 +477,19 @@ export default function Home() {
                 </FadeIn>
                 <FadeIn>
                   <p className="text-base lg:text-lg leading-relaxed text-foreground/85 max-w-3xl mb-4">
-                    I am a Machine Learning Ph.D. candidate at Georgia Tech{" "}
-                    <a href="http://ml.gatech.edu/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">(ML@GT)</a>, advised by{" "}
+                    I work on end-to-end LLM post-training at{" "}
+                    <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Amazon</a>,
+                    focusing on scalable data synthesis and reinforcement learning.
+                  </p>
+                </FadeIn>
+                <FadeIn>
+                  <p className="text-base lg:text-lg leading-relaxed text-foreground/85 max-w-3xl mb-4">
+                    I obtained my Ph.D. in Machine Learning from Georgia Tech{" "}
+                    <a href="http://ml.gatech.edu/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">(ML@GT)</a>{" "}
+                    in May 2025, advised by{" "}
                     <a href="http://chaozhang.org/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Prof. Chao Zhang</a>.
                     My research interest primarily lies in model efficiency and data efficiency of language models.
-                    Beyond academia, I've spent several fantastic research internships at{" "}
+                    During my Ph.D., I spent several fantastic research internships at{" "}
                     <a href="https://research.google/" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Google Research</a>,{" "}
                     <a href="https://www.microsoft.com/en-us/research/" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Microsoft Azure AI</a>, and{" "}
                     <a href="https://www.aboutamazon.com/news/retail/amazon-rufus" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Amazon Stores Foundational AI</a>.
@@ -497,50 +505,6 @@ export default function Home() {
                 </FadeIn>
               </AnimatedSection>
             </div>
-          </section>
-
-          {/* Education Section */}
-          <section className="px-6 sm:px-10 lg:px-16 py-14 lg:py-20">
-            <AnimatedSection>
-              <FadeIn>
-                <div className="flex items-center gap-3 mb-8">
-                  <GraduationCap className="w-6 h-6 text-terracotta" />
-                  <h2 className="text-2xl lg:text-3xl font-serif text-foreground">Education</h2>
-                </div>
-              </FadeIn>
-              <div className="space-y-6 max-w-3xl">
-                <FadeIn>
-                  <EducationCard
-                    school="Georgia Institute of Technology"
-                    schoolUrl="https://www.gatech.edu"
-                    location="Atlanta"
-                    period="Aug. 2019 – Present"
-                    degrees={[
-                      "Ph.D. in Machine Learning",
-                      "M.S. in Electrical and Computer Engineering (May 2021)",
-                    ]}
-                  />
-                </FadeIn>
-                <FadeIn>
-                  <EducationCard
-                    school="Zhejiang University"
-                    schoolUrl="http://www.zju.edu.cn/english/"
-                    location="Hangzhou"
-                    period="Aug. 2015 – June 2019"
-                    degrees={["B.Eng. in Measurement Control Technology and Instruments"]}
-                  />
-                </FadeIn>
-                <FadeIn>
-                  <EducationCard
-                    school="Harvard Medical School"
-                    schoolUrl="https://hms.harvard.edu/"
-                    location="Boston"
-                    period="Sep. 2018 – May 2019"
-                    degrees={["Visiting Student Researcher in Neural System Group"]}
-                  />
-                </FadeIn>
-              </div>
-            </AnimatedSection>
           </section>
 
           {/* Research Section */}
@@ -633,7 +597,7 @@ export default function Home() {
           {/* Experience Section */}
           <section
             id="experience"
-            className="px-6 sm:px-10 lg:px-16 py-14 lg:py-20 bg-warm-card/50"
+            className="px-6 sm:px-10 lg:px-16 py-14 lg:py-20"
             style={{ scrollMarginTop: "80px" }}
           >
             <AnimatedSection>
@@ -653,10 +617,58 @@ export default function Home() {
             </AnimatedSection>
           </section>
 
+          {/* Education Section */}
+          <section
+            id="education"
+            className="px-6 sm:px-10 lg:px-16 py-14 lg:py-20"
+            style={{ scrollMarginTop: "80px" }}
+          >
+            <AnimatedSection>
+              <FadeIn>
+                <div className="flex items-center gap-3 mb-8">
+                  <GraduationCap className="w-6 h-6 text-terracotta" />
+                  <h2 className="text-2xl lg:text-3xl font-serif text-foreground">Education</h2>
+                </div>
+              </FadeIn>
+              <div className="space-y-6 max-w-3xl">
+                <FadeIn>
+                  <EducationCard
+                    school="Georgia Institute of Technology"
+                    schoolUrl="https://www.gatech.edu"
+                    location="Atlanta"
+                    period="Aug. 2019 – May 2025"
+                    degrees={[
+                      "Ph.D. in Machine Learning",
+                      "M.S. in Electrical and Computer Engineering (May 2021)",
+                    ]}
+                  />
+                </FadeIn>
+                <FadeIn>
+                  <EducationCard
+                    school="Zhejiang University"
+                    schoolUrl="http://www.zju.edu.cn/english/"
+                    location="Hangzhou"
+                    period="Aug. 2015 – June 2019"
+                    degrees={["B.Eng. in Measurement Control Technology and Instruments"]}
+                  />
+                </FadeIn>
+                <FadeIn>
+                  <EducationCard
+                    school="Harvard Medical School"
+                    schoolUrl="https://hms.harvard.edu/"
+                    location="Boston"
+                    period="Sep. 2018 – May 2019"
+                    degrees={["Visiting Student Researcher in Neural System Group"]}
+                  />
+                </FadeIn>
+              </div>
+            </AnimatedSection>
+          </section>
+
           {/* Teaching Section */}
           <section
             id="teaching"
-            className="px-6 sm:px-10 lg:px-16 py-14 lg:py-20"
+            className="px-6 sm:px-10 lg:px-16 py-14 lg:py-20 bg-warm-card/50"
             style={{ scrollMarginTop: "80px" }}
           >
             <AnimatedSection>
@@ -682,12 +694,12 @@ export default function Home() {
           {/* Academic Service Section */}
           <section
             id="service"
-            className="px-6 sm:px-10 lg:px-16 py-14 lg:py-20 bg-warm-card/50"
+            className="px-6 sm:px-10 lg:px-16 py-14 lg:py-20"
             style={{ scrollMarginTop: "80px" }}
           >
             <AnimatedSection>
               <FadeIn>
-                <div className="flex items-center gap-3 mb-10">
+                <div className="flex items-center gap-3 mb-6">
                   <Users className="w-6 h-6 text-terracotta" />
                   <h2 className="text-2xl lg:text-3xl font-serif text-foreground">Academic Service</h2>
                 </div>
@@ -695,47 +707,49 @@ export default function Home() {
 
               <div className="max-w-3xl">
                 <FadeIn>
-                  <h3 className="text-base font-semibold text-foreground mb-4">Area Chair</h3>
+                  <div className="mb-5">
+                    <span className="text-sm font-semibold text-foreground/70 uppercase tracking-wider">Area Chair</span>
+                    <span className="text-foreground/40 mx-2">&mdash;</span>
+                    <span className="text-sm text-foreground/85">{SERVICE_AC.map(s => `${s.venue} ${s.year}`).join(", ")}</span>
+                  </div>
                 </FadeIn>
-                <div className="space-y-2 mb-8">
-                  {SERVICE_AC.map((s, i) => (
-                    <FadeIn key={i}>
-                      <div className="flex items-center justify-between py-2">
-                        <span className="text-foreground/85">{s.venue}</span>
-                        <span className="text-sm text-muted-foreground">{s.year}</span>
-                      </div>
-                    </FadeIn>
-                  ))}
-                </div>
-
                 <FadeIn>
-                  <h3 className="text-base font-semibold text-foreground mb-4">Reviewer</h3>
+                  <div>
+                    <span className="text-sm font-semibold text-foreground/70 uppercase tracking-wider">Reviewer</span>
+                    <span className="text-foreground/40 mx-2">&mdash;</span>
+                    <span className="text-sm text-foreground/85 leading-relaxed">
+                      {SERVICE_REVIEWER.map((s, i) => (
+                        <span key={i}>
+                          {s.venue}{" "}
+                          <span className="text-muted-foreground text-xs">({s.year})</span>
+                          {i < SERVICE_REVIEWER.length - 1 && <span className="text-foreground/25 mx-1.5">&middot;</span>}
+                        </span>
+                      ))}
+                    </span>
+                  </div>
                 </FadeIn>
-                <div className="space-y-2">
-                  {SERVICE_REVIEWER.map((s, i) => (
-                    <FadeIn key={i}>
-                      <div className="flex items-center justify-between py-2 border-b border-warm-border/50">
-                        <span className="text-foreground/85">{s.venue}</span>
-                        <span className="text-sm text-muted-foreground">{s.year}</span>
-                      </div>
-                    </FadeIn>
-                  ))}
-                </div>
               </div>
             </AnimatedSection>
           </section>
 
           {/* Misc Section */}
-          <section className="px-6 sm:px-10 lg:px-16 py-14 lg:py-16">
+          <section className="px-6 sm:px-10 lg:px-16 py-14 lg:py-16 bg-warm-card/50">
             <AnimatedSection>
               <FadeIn>
                 <h2 className="text-2xl lg:text-3xl font-serif text-foreground mb-6">Misc</h2>
               </FadeIn>
-              <FadeIn>
-                <p className="text-foreground/80 max-w-3xl leading-relaxed">
-                  I was a player of Zhejiang University Varsity Men's basketball team, competing in CUBA Division II.
-                </p>
-              </FadeIn>
+              <div className="space-y-3 max-w-3xl">
+                <FadeIn>
+                  <p className="text-foreground/80 leading-relaxed">
+                    I was a player of Zhejiang University Varsity Men's basketball team, competing in CUBA Division II.
+                  </p>
+                </FadeIn>
+                <FadeIn>
+                  <p className="text-foreground/80 leading-relaxed">
+                    I enjoy watching FC Barcelona matches and cheering for <span className="line-through text-foreground/40">Nadal</span> Alcaraz on the tennis court.
+                  </p>
+                </FadeIn>
+              </div>
             </AnimatedSection>
           </section>
 
