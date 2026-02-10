@@ -7,7 +7,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { Mail, MapPin, Building2, ExternalLink, GraduationCap, Briefcase, BookOpen, Users, ChevronUp, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Building2, ExternalLink, GraduationCap, Briefcase, BookOpen, Users, ChevronUp, Github, Linkedin, Twitter, Sparkles, PenLine, Trophy } from "lucide-react";
 
 const PROFILE_PHOTO = "/images/profile.jpeg";
 
@@ -98,7 +98,7 @@ function FadeIn({ children, className = "" }: { children: React.ReactNode; class
 // Navigation items
 const NAV_ITEMS = [
   { id: "about", label: "About" },
-  { id: "research", label: "Research" },
+  // { id: "research", label: "Research" },
   { id: "publications", label: "Publications" },
   { id: "experience", label: "Experience" },
   { id: "education", label: "Education" },
@@ -111,7 +111,7 @@ const PREPRINTS = [
   {
     title: "Precise Attribute Intensity Control in Large Language Models via Targeted Representation Editing",
     authors: "Rongzhi Zhang*, Liqin Ye*, Yuzhao Heng, Xiang Chen, Tong Yu, Lingkai Kong, Sudheer Chava and Chao Zhang.",
-    venue: "An arXiv version will be available soon.",
+    venue: "Preprint on ArXiv",
     year: "2025",
     first: true,
     url: "https://arxiv.org/html/2510.12121v1",
@@ -119,7 +119,7 @@ const PREPRINTS = [
   {
     title: "Instant Personalized Large Language Model Adaptation via Hypernetwork",
     authors: "Zhaoxuan Tan, Zixuan Zhang, Haoyang Wen, Zheng Li, Rongzhi Zhang, Pei Chen, Fengran Mo, Zheyuan Liu, Qingkai Zeng, Qingyu Yin and Meng Jiang.",
-    venue: "Preprint on ArXiv, 2025.",
+    venue: "Preprint on ArXiv",
     year: "2025",
     first: false,
     url: "https://arxiv.org/pdf/2510.16282",
@@ -127,7 +127,7 @@ const PREPRINTS = [
   {
     title: "HeaPA: Difficulty-Aware Heap Sampling and On-Policy Query Augmentation for LLM Reinforcement Learning",
     authors: "Weiqi Wang, Xin Liu, Binxuan Huang, Hejie Cui, Rongzhi Zhang, Changlong Yu, Shuowei Jin, Jingfeng Yang, Qingyu Yin, Zhengyang Wang, Zheng Li, Yifan Gao, Priyanka Nigam, Bing Yin, Lihong Li, Yangqiu Song",
-    venue: "Preprint on ArXiv.",
+    venue: "Preprint on ArXiv",
     year: "2026",
     first: false,
     url: "https://arxiv.org/pdf/2601.22448",
@@ -465,7 +465,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background" />
             </div>
 
-            <div className="relative z-10 px-6 sm:px-10 lg:px-16 pt-12 pb-16 lg:pt-20 lg:pb-24">
+            <div className="relative z-10 px-6 sm:px-10 lg:px-16 pt-12 pb-10 lg:pt-20 lg:pb-14">
               {/* Mobile Profile */}
               <div className="lg:hidden mb-8">
                 <div className="w-28 h-28 rounded-full overflow-hidden mb-4 ring-4 ring-warm-border shadow-lg">
@@ -486,7 +486,10 @@ export default function Home() {
 
               <AnimatedSection>
                 <FadeIn>
-                  <h2 className="text-2xl lg:text-3xl font-serif text-foreground mb-6">About Me</h2>
+                  <div className="flex items-center gap-3 mb-6">
+  <Sparkles className="w-6 h-6 text-terracotta" />
+  <h2 className="text-2xl lg:text-3xl font-serif text-foreground">About Me</h2>
+</div>
                 </FadeIn>
                 <FadeIn>
                   <p className="text-base lg:text-lg leading-relaxed text-foreground/85 max-w-3xl mb-4">
@@ -520,7 +523,7 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Research Section */}
+          /* {/* Research Section */}
           <section
             id="research"
             className="relative overflow-hidden"
@@ -568,7 +571,7 @@ export default function Home() {
                 </div>
               </AnimatedSection>
             </div>
-          </section>
+          </section> */
 
           {/* Publications Section */}
           <section
@@ -578,7 +581,10 @@ export default function Home() {
           >
             <AnimatedSection>
               <FadeIn>
-                <h2 className="text-2xl lg:text-3xl font-serif text-foreground mb-10">Publications</h2>
+                <div className="flex items-center gap-3 mb-10">
+  <BookOpen className="w-6 h-6 text-terracotta" />
+  <h2 className="text-2xl lg:text-3xl font-serif text-foreground">Publications</h2>
+</div>
               </FadeIn>
 
               {/* Preprints */}
@@ -686,7 +692,10 @@ export default function Home() {
           >
             <AnimatedSection>
               <FadeIn>
-                <h2 className="text-2xl lg:text-3xl font-serif text-foreground mb-10">Teaching</h2>
+                <div className="flex items-center gap-3 mb-10">
+  <PenLine className="w-6 h-6 text-terracotta" />
+  <h2 className="text-2xl lg:text-3xl font-serif text-foreground">Teaching</h2>
+</div>
               </FadeIn>
               <div className="space-y-4 max-w-3xl">
                 {TEACHING.map((t, i) => (
@@ -749,7 +758,10 @@ export default function Home() {
           <section className="px-6 sm:px-10 lg:px-16 py-14 lg:py-16 bg-warm-card/50">
             <AnimatedSection>
               <FadeIn>
-                <h2 className="text-2xl lg:text-3xl font-serif text-foreground mb-6">Misc</h2>
+                <div className="flex items-center gap-3 mb-6">
+  <Trophy className="w-6 h-6 text-terracotta" />
+  <h2 className="text-2xl lg:text-3xl font-serif text-foreground">Misc</h2>
+</div>
               </FadeIn>
               <div className="space-y-3 max-w-3xl">
                 <FadeIn>
