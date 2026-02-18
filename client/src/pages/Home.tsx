@@ -112,6 +112,7 @@ const NAV_ITEMS = [
   { id: "education", label: "Education" },
   { id: "teaching", label: "Teaching" },
   { id: "service", label: "Service" },
+  { id: "misc", label: "Misc" },
 ];
 
 // Publications data
@@ -738,10 +739,26 @@ export default function Home() {
               <div className="max-w-3xl">
                 <FadeIn>
                   <div className="mb-5">
-                    <span className="text-sm font-semibold text-foreground/70 uppercase tracking-wider">Area Chair</span>
+                    <span className="text-sm font-semibold text-foreground/70 uppercase tracking-wider">
+                      Area Chair
+                    </span>
                     <span className="text-foreground/40 mx-2">&mdash;</span>
-                    <span className="text-sm text-foreground/85">{SERVICE_AC.map(s => `${s.venue} ${s.year}`).join(", ")}</span>
+                  
+                    <span className="text-sm text-foreground/85 leading-relaxed">
+                      {SERVICE_AC.map((s, i) => (
+                        <span key={i}>
+                          {s.venue}{" "}
+                          <span className="text-muted-foreground text-xs">
+                            ({s.year})
+                          </span>
+                          {i < SERVICE_AC.length - 1 && (
+                            <span className="text-foreground/25 mx-1.5">&middot;</span>
+                          )}
+                        </span>
+                      ))}
+                    </span>
                   </div>
+
                 </FadeIn>
                 <FadeIn>
                   <div>
@@ -763,7 +780,11 @@ export default function Home() {
           </section>
 
           {/* Misc Section */}
-          <section className="px-6 sm:px-10 lg:px-16 py-14 lg:py-16 bg-warm-card/50">
+          <section
+            id="misc"
+            className="px-6 sm:px-10 lg:px-16 py-14 lg:py-16 bg-warm-card/50"
+            style={{ scrollMarginTop: "80px" }}
+          >
             <AnimatedSection>
               <FadeIn>
                 <div className="flex items-center gap-3 mb-6">
