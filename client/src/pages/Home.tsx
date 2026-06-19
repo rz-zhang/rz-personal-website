@@ -118,20 +118,20 @@ const NAV_ITEMS = [
 // Publications data
 const PREPRINTS = [
   {
+    title: "QUBRIC: Co-Designing Queries and Rubrics for RL Beyond Verifiable Rewards",
+    authors: "Rongzhi Zhang*, Rui Feng, Zhihan Zhang, Jingfeng Yang, Qingyu Yin, Xin Liu, Zixuan Zhang, Priyanka Nigam, Bing Yin, Tuo Zhao and Chao Zhang.",
+    venue: "Preprint on ArXiv",
+    year: "2026",
+    first: true,
+    url: "https://arxiv.org/pdf/2606.03968",
+  },
+  {
     title: "Precise Attribute Intensity Control in Large Language Models via Targeted Representation Editing",
     authors: "Rongzhi Zhang*, Liqin Ye*, Yuzhao Heng, Xiang Chen, Tong Yu, Lingkai Kong, Sudheer Chava and Chao Zhang.",
     venue: "Preprint on ArXiv",
-    year: "2025",
+    year: "2026",
     first: true,
-    url: "https://arxiv.org/html/2510.12121v1",
-  },
-  {
-    title: "Instant Personalized Large Language Model Adaptation via Hypernetwork",
-    authors: "Zhaoxuan Tan, Zixuan Zhang, Haoyang Wen, Zheng Li, Rongzhi Zhang, Pei Chen, Fengran Mo, Zheyuan Liu, Qingkai Zeng, Qingyu Yin and Meng Jiang.",
-    venue: "Preprint on ArXiv",
-    year: "2025",
-    first: false,
-    url: "https://arxiv.org/pdf/2510.16282",
+    url: "https://arxiv.org/pdf/2510.12121",
   },
   {
     title: "HeaPA: Difficulty-Aware Heap Sampling and On-Policy Query Augmentation for LLM Reinforcement Learning",
@@ -144,6 +144,14 @@ const PREPRINTS = [
 ];
 
 const PUBLICATIONS = [
+  {
+    title: "Instant Personalized Large Language Model Adaptation via Hypernetwork",
+    authors: "Zhaoxuan Tan, Zixuan Zhang, Haoyang Wen, Zheng Li, Rongzhi Zhang, Pei Chen, Fengran Mo, Zheyuan Liu, Qingkai Zeng, Qingyu Yin and Meng Jiang.",
+    venue: "ACL",
+    year: "2026",
+    first: false,
+    url: "https://arxiv.org/pdf/2510.16282",
+  },
   {
     title: "MLE-Dojo: Interactive Environments for Empowering LLM Agents in Machine Learning Engineering",
     authors: "Rushi Qiang, Yuchen Zhuang, Yinghao Li, Rongzhi Zhang, Changhao Li, Ian Shu-Hei Wong, Sherry Yang, Percy Liang, Chao Zhang and Bo Dai.",
@@ -502,9 +510,9 @@ export default function Home() {
                 </FadeIn>
                 <FadeIn>
                   <p className="text-base lg:text-lg leading-relaxed text-foreground/85 max-w-3xl mb-4">
-                    I work on end-to-end LLM post-training at{" "}
+                    I post-train LLMs for agentic capabilities at{" "}
                     <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Amazon Rufus Team</a>,
-                    focusing on scalable data synthesis and reinforcement learning.
+                    building the agentic RL stack including environments and recipes, from long-horizon agents to shopping assistants in production.
                   </p>
                 </FadeIn>
                 <FadeIn>
@@ -513,19 +521,14 @@ export default function Home() {
                     <a href="http://ml.gatech.edu/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">(ML@GT)</a>{" "}
                     in 2025, advised by{" "}
                     <a href="http://chaozhang.org/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Prof. Chao Zhang</a>.
-                    My research centers on model efficiency and data efficiency for language models.
+                    I received my B.E. from{" "}
+                    <a href="http://www.zju.edu.cn/english/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Zhejiang University</a>,
+                    and spent my senior year as a visiting researcher at{" "}
+                    <a href="https://hms.harvard.edu/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Harvard Medical School</a>.
                     During my Ph.D., I interned at{" "}
                     <a href="https://research.google/" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Google Research</a>,{" "}
                     <a href="https://www.microsoft.com/en-us/research/" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Microsoft Azure AI</a>, and{" "}
                     <a href="https://www.aboutamazon.com/news/retail/amazon-rufus" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Amazon Stores Foundational AI</a>.
-                  </p>
-                </FadeIn>
-                <FadeIn>
-                  <p className="text-base lg:text-lg leading-relaxed text-foreground/85 max-w-3xl">
-                    I received my B.E. from{" "}
-                    <a href="http://www.zju.edu.cn/english/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Zhejiang University</a>,
-                    and I spent my senior year as a visiting researcher at{" "}
-                    <a href="https://hms.harvard.edu/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Harvard Medical School</a>.
                   </p>
                 </FadeIn>
               </AnimatedSection>
