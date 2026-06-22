@@ -297,6 +297,7 @@ const EXPERIENCES = [
     companyUrl: "https://www.aboutamazon.com/news/retail/amazon-rufus",
     location: "Palo Alto, CA",
     period: "May 2024 – Nov. 2024",
+    topic: "Data Efficiency for Preference Optimization",
     hosts: [
       { name: "Chenwei Zhang", url: "https://cwzhang.com/" },
       { name: "Xinyang Zhang", url: "https://scholar.google.com/citations?user=5nowj40AAAAJ" },
@@ -309,6 +310,7 @@ const EXPERIENCES = [
     companyUrl: "https://www.microsoft.com/en-us/research/",
     location: "Redmond, WA",
     period: "Jan. 2024 – May 2024",
+    topic: "KV Cache Compression",
     hosts: [
       { name: "Shuohang Wang", url: "https://sites.google.com/site/shuohangsite" },
       { name: "Lucas Liu", url: "https://liyuanlucasliu.github.io/" },
@@ -322,6 +324,7 @@ const EXPERIENCES = [
     companyUrl: "https://research.google/",
     location: "New York City, NY",
     period: "May 2023 – Dec. 2023",
+    topic: "LLM Distillation",
     hosts: [
       { name: "Jiaming Shen", url: "https://mickeysjm.github.io/" },
       { name: "Tianqi Liu", url: "https://scholar.google.com/citations?user=pUKhiMIAAAAJ" },
@@ -335,6 +338,7 @@ const EXPERIENCES = [
     companyUrl: "https://research.google/",
     location: "New York City, NY",
     period: "May 2022 – Dec. 2022",
+    topic: "LLM Distillation",
     hosts: [
       { name: "Jiaming Shen", url: "https://mickeysjm.github.io/" },
       { name: "Tianqi Liu", url: "https://scholar.google.com/citations?user=pUKhiMIAAAAJ" },
@@ -350,7 +354,7 @@ const TEACHING = [
   { course: "CS 4641/7641 - Machine Learning", semester: "Fall 2020", school: "Georgia Tech", url: "https://mahdi-roozbahani.github.io/CS46417641-fall2020/#" },
 ];
 
-const SERVICE_AC = [{ venue: "ACL Rolling Review", year: "2025 - " }];
+const SERVICE_AC = [{ venue: "ACL Rolling Review" }];
 const SERVICE_REVIEWER = [
   { venue: "ICML", note: "Gold Reviewer 2026" },
   { venue: "NeurIPS", note: "" },
@@ -522,7 +526,7 @@ export default function Home() {
                     <a href="http://ml.gatech.edu/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">(ML@GT)</a>{" "}
                     in 2025, advised by{" "}
                     <a href="http://chaozhang.org/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Prof. Chao Zhang</a>.
-                    I received my B.E. from{" "}
+                    Before that, I received my B.E. from{" "}
                     <a href="http://www.zju.edu.cn/english/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Zhejiang University</a>,
                     and spent my senior year as a visiting researcher at{" "}
                     <a href="https://hms.harvard.edu/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Harvard Medical School</a>.
@@ -667,7 +671,7 @@ export default function Home() {
                   <EducationCard
                     school="Georgia Institute of Technology"
                     schoolUrl="https://www.gatech.edu"
-                    location="Atlanta"
+                    location="Atlanta, GA"
                     period="Aug. 2019 – May 2025"
                     degrees={[
                       "Ph.D. in Machine Learning",
@@ -679,7 +683,7 @@ export default function Home() {
                   <EducationCard
                     school="Zhejiang University"
                     schoolUrl="http://www.zju.edu.cn/english/"
-                    location="Hangzhou"
+                    location="Hangzhou, Zhejiang"
                     period="Aug. 2015 – June 2019"
                     degrees={["B.Eng. in Measurement Control Technology and Instruments"]}
                   />
@@ -688,7 +692,7 @@ export default function Home() {
                   <EducationCard
                     school="Harvard Medical School"
                     schoolUrl="https://hms.harvard.edu/"
-                    location="Boston"
+                    location="Boston, MA"
                     period="Sep. 2018 – May 2019"
                     degrees={["Visiting Student Researcher in Neural System Group"]}
                   />
@@ -751,10 +755,7 @@ export default function Home() {
                     <span className="text-sm text-foreground/85 leading-relaxed">
                       {SERVICE_AC.map((s, i) => (
                         <span key={i}>
-                          {s.venue}{" "}
-                          <span className="text-muted-foreground text-xs">
-                            ({s.year})
-                          </span>
+                          {s.venue}
                           {i < SERVICE_AC.length - 1 && (
                             <span className="text-foreground/25 mx-1.5">&middot;</span>
                           )}
@@ -963,6 +964,7 @@ type ExperienceData = {
   companyUrl: string;
   location: string;
   period: string;
+  topic?: string;
   hosts: { name: string; url: string }[];
   LogoComponent: React.FC<{ className?: string }>;
 };
@@ -987,6 +989,12 @@ function ExperienceCard({ exp }: { exp: ExperienceData }) {
             </a>
           </p>
           <p className="text-sm text-muted-foreground">{exp.location}</p>
+          {exp.topic && (
+            <p className="text-sm text-muted-foreground mt-2">
+              <span className="text-foreground/50">Topic: </span>
+              {exp.topic}
+            </p>
+          )}
           <p className="text-sm text-muted-foreground mt-2">
             <span className="text-foreground/50">Host: </span>
             {exp.hosts.map((h, i) => (
