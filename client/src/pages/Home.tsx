@@ -119,7 +119,7 @@ const NAV_ITEMS = [
 const PREPRINTS = [
   {
     title: "QUBRIC: Co-Designing Queries and Rubrics for RL Beyond Verifiable Rewards",
-    authors: "Rongzhi Zhang*, Rui Feng, Zhihan Zhang, Jingfeng Yang, Qingyu Yin, Xin Liu, Zixuan Zhang, Priyanka Nigam, Bing Yin, Tuo Zhao and Chao Zhang.",
+    authors: "Rongzhi Zhang*, Rui Feng*, Zhihan Zhang*, Jingfeng Yang, Qingyu Yin, Xin Liu, Zixuan Zhang, Priyanka Nigam, Bing Yin, Tuo Zhao and Chao Zhang.",
     venue: "Preprint on ArXiv",
     year: "2026",
     first: true,
@@ -352,14 +352,15 @@ const TEACHING = [
 
 const SERVICE_AC = [{ venue: "ACL Rolling Review", year: "2025 - " }];
 const SERVICE_REVIEWER = [
-  { venue: "EMNLP", year: "2022 – " },
-  { venue: "ACL", year: "2022 – " },
-  { venue: "ACL Rolling Review", year: "2023 – " },
-  { venue: "KDD", year: "2023 – " },
-  { venue: "NeurIPS", year: "2023 – " },
-  { venue: "ICML", year: "2024 – " },
-  { venue: "ICLR", year: "2024 – " },
-  { venue: "COLM", year: "2025 - " },
+  { venue: "ICML", note: "Gold Reviewer 2026" },
+  { venue: "NeurIPS", note: "" },
+  { venue: "ICLR", note: "" },
+  { venue: "COLM", note: "" },
+  { venue: "KDD", note: "" },
+  { venue: "ACL", note: "" },
+  { venue: "EMNLP", note: "" },
+  { venue: "ACL Rolling Review", note: "" },
+  { venue: "TMLR", note: "" },
 ];
 
 export default function Home() {
@@ -526,9 +527,9 @@ export default function Home() {
                     and spent my senior year as a visiting researcher at{" "}
                     <a href="https://hms.harvard.edu/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Harvard Medical School</a>.
                     During my Ph.D., I interned at{" "}
-                    <a href="https://research.google/" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Google Research</a>,{" "}
-                    <a href="https://www.microsoft.com/en-us/research/" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Microsoft Azure AI</a>, and{" "}
-                    <a href="https://www.aboutamazon.com/news/retail/amazon-rufus" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Amazon Stores Foundational AI</a>.
+                    <a href="https://research.google/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Google Research</a>,{" "}
+                    <a href="https://www.microsoft.com/en-us/research/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Microsoft Azure AI</a>, and{" "}
+                    <a href="https://www.aboutamazon.com/news/retail/amazon-rufus" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Amazon Stores Foundational AI</a>.
                   </p>
                 </FadeIn>
               </AnimatedSection>
@@ -770,8 +771,13 @@ export default function Home() {
                     <span className="text-sm text-foreground/85 leading-relaxed">
                       {SERVICE_REVIEWER.map((s, i) => (
                         <span key={i}>
-                          {s.venue}{" "}
-                          <span className="text-muted-foreground text-xs">({s.year})</span>
+                          {s.venue}
+                          {s.note && (
+                            <>
+                              {" "}
+                              <span className="text-muted-foreground text-xs">({s.note})</span>
+                            </>
+                          )}
                           {i < SERVICE_REVIEWER.length - 1 && <span className="text-foreground/25 mx-1.5">&middot;</span>}
                         </span>
                       ))}
