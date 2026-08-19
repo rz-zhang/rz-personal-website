@@ -133,17 +133,17 @@ const PREPRINTS = [
     first: true,
     url: "https://arxiv.org/pdf/2510.12121",
   },
+];
+
+const PUBLICATIONS = [
   {
     title: "HeaPA: Difficulty-Aware Heap Sampling and On-Policy Query Augmentation for LLM Reinforcement Learning",
     authors: "Weiqi Wang, Xin Liu, Binxuan Huang, Hejie Cui, Rongzhi Zhang, Changlong Yu, Shuowei Jin, Jingfeng Yang, Qingyu Yin, Zhengyang Wang, Zheng Li, Yifan Gao, Priyanka Nigam, Bing Yin, Lihong Li, Yangqiu Song",
-    venue: "Preprint on ArXiv",
+    venue: "COLM",
     year: "2026",
     first: false,
     url: "https://arxiv.org/pdf/2601.22448",
   },
-];
-
-const PUBLICATIONS = [
   {
     title: "Instant Personalized Large Language Model Adaptation via Hypernetwork",
     authors: "Zhaoxuan Tan, Zixuan Zhang, Haoyang Wen, Zheng Li, Rongzhi Zhang, Pei Chen, Fengran Mo, Zheyuan Liu, Qingkai Zeng, Qingyu Yin and Meng Jiang.",
@@ -510,14 +510,14 @@ export default function Home() {
                 <FadeIn>
                   <div className="flex items-center gap-3 mb-6">
   <Sparkles className="w-6 h-6 text-terracotta" />
-  <h2 className="text-2xl lg:text-3xl font-serif text-foreground">About Me</h2>
+  <h2 className="text-2xl lg:text-3xl font-serif text-foreground">About</h2>
 </div>
                 </FadeIn>
                 <FadeIn>
                   <p className="text-base lg:text-lg leading-relaxed text-foreground/85 max-w-3xl mb-4">
                     I post-train LLMs for agentic capabilities at{" "}
                     <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Amazon Rufus Team</a>,
-                    building the agentic RL stack including environments and recipes, from long-horizon agents to shopping assistants in production.
+                    working across data, harness, and training recipes. My current work focuses on RL for general capabilities and agentic search.
                   </p>
                 </FadeIn>
                 <FadeIn>
