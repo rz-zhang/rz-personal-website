@@ -798,7 +798,7 @@ export default function Home() {
               <div className="space-y-3 max-w-3xl">
                 <FadeIn>
                   <p className="text-foreground/80 leading-relaxed">
-                    I was a player of Zhejiang University Varsity Men's basketball team, competing in CUBA Division II.
+                    I played on Zhejiang University's varsity men's basketball team, competing in CUBA Division II.
                   </p>
                 </FadeIn>
                 <FadeIn>
