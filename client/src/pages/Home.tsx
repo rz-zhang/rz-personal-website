@@ -415,8 +415,8 @@ export default function Home() {
             {/* <div className="space-y-3 mb-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-terracotta shrink-0" />
-                <a href="mailto:rongzhi.zhang@gatech.edu" className="hover:text-terracotta transition-colors">
-                  rongzhi.zhang@gatech.edu
+                <a href="mailto:ronzey.zhang@gmail.com" className="hover:text-terracotta transition-colors">
+                  ronzey.zhang@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-2.5">
@@ -493,8 +493,8 @@ export default function Home() {
                 <p className="text-base text-terracotta font-medium mb-1">Applied Scientist, Amazon</p>
                 <div className="flex items-center gap-2 mt-3 text-sm text-muted-foreground">
                   <Mail className="w-3.5 h-3.5 text-terracotta" />
-                  <a href="mailto:rongzhi.zhang@gatech.edu" className="hover:text-terracotta transition-colors">
-                    rongzhi.zhang@gatech.edu
+                  <a href="mailto:ronzey.zhang@gmail.com" className="hover:text-terracotta transition-colors">
+                    ronzey.zhang@gmail.com
                   </a>
                 </div>
               </div>
@@ -815,7 +815,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <p className="text-sm">&copy; {new Date().getFullYear()} Rongzhi Zhang. All rights reserved.</p>
               <div className="flex items-center gap-4 text-sm">
-                <a href="mailto:rongzhi.zhang@gatech.edu" className="hover:text-background transition-colors">Email</a>
+                <a href="mailto:ronzey.zhang@gmail.com" className="hover:text-background transition-colors">Email</a>
                 <span className="text-background/30">|</span>
                 <a href="https://scholar.google.com/citations?hl=en&user=jHgmQEIAAAAJ" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">Google Scholar</a>
                 <span className="text-background/30">|</span>
