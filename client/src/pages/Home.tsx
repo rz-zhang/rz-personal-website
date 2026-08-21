@@ -807,7 +807,7 @@ export default function Home() {
                 </FadeIn>
                 <FadeIn>
                   <p className="text-foreground/80 leading-relaxed">
-                    I'm an Ark Nova fan and have somehow stolen a few wins from the season champion on Board Game Arena.
+                    I'm an <a href="https://en.wikipedia.org/wiki/Ark_Nova" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Ark Nova</a> fan and somehow stole a few wins from the season champion on Board Game Arena.
                   </p>
                 </FadeIn>
               </div>
