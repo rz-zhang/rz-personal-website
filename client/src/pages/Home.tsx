@@ -803,6 +803,11 @@ export default function Home() {
                 </FadeIn>
                 <FadeIn>
                   <p className="text-foreground/80 leading-relaxed">
+                    I'm an Ark Nova fan and have somehow stolen a few wins from the season champion on Board Game Arena.
+                  </p>
+                </FadeIn>
+                <FadeIn>
+                  <p className="text-foreground/80 leading-relaxed">
                     I enjoy watching FC Barcelona matches and cheering for <span className="line-through text-foreground/40">R. Nadal</span> C. Alcaraz on the tennis court.
                   </p>
                 </FadeIn>
