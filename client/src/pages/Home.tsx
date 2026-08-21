@@ -118,14 +118,6 @@ const NAV_ITEMS = [
 // Publications data
 const PREPRINTS = [
   {
-    title: "QUBRIC: Co-Designing Queries and Rubrics for RL Beyond Verifiable Rewards",
-    authors: "Rongzhi Zhang*, Rui Feng*, Zhihan Zhang*, Jingfeng Yang, Qingyu Yin, Xin Liu, Zixuan Zhang, Priyanka Nigam, Bing Yin, Tuo Zhao and Chao Zhang.",
-    venue: "Preprint on ArXiv",
-    year: "2026",
-    first: true,
-    url: "https://arxiv.org/pdf/2606.03968",
-  },
-  {
     title: "Precise Attribute Intensity Control in Large Language Models via Targeted Representation Editing",
     authors: "Rongzhi Zhang*, Liqin Ye*, Yuzhao Heng, Xiang Chen, Tong Yu, Lingkai Kong, Sudheer Chava and Chao Zhang.",
     venue: "Preprint on ArXiv",
@@ -136,6 +128,14 @@ const PREPRINTS = [
 ];
 
 const PUBLICATIONS = [
+  {
+    title: "QUBRIC: Co-Designing Queries and Rubrics for RL Beyond Verifiable Rewards",
+    authors: "Rongzhi Zhang*, Rui Feng*, Zhihan Zhang*, Jingfeng Yang, Qingyu Yin, Xin Liu, Zixuan Zhang, Priyanka Nigam, Bing Yin, Tuo Zhao and Chao Zhang.",
+    venue: "EMNLP",
+    year: "2026",
+    first: true,
+    url: "https://arxiv.org/pdf/2606.03968",
+  },
   {
     title: "HeaPA: Difficulty-Aware Heap Sampling and On-Policy Query Augmentation for LLM Reinforcement Learning",
     authors: "Weiqi Wang, Xin Liu, Binxuan Huang, Hejie Cui, Rongzhi Zhang, Changlong Yu, Shuowei Jin, Jingfeng Yang, Qingyu Yin, Zhengyang Wang, Zheng Li, Yifan Gao, Priyanka Nigam, Bing Yin, Lihong Li, Yangqiu Song",
