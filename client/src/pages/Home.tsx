@@ -409,10 +409,6 @@ export default function Home() {
               </div>
               <h1 className="text-3xl xl:text-4xl font-serif text-foreground mb-2">Rongzhi Zhang</h1>
               <p className="text-base text-terracotta font-medium mb-1">Applied Scientist, Amazon</p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Ph.D. in Machine Learning<br />
-                Georgia Institute of Technology
-              </p>
             </div>
 
             {/* Contact Info */}
@@ -495,9 +491,6 @@ export default function Home() {
                 </div>
                 <h1 className="text-3xl font-serif text-foreground mb-1">Rongzhi Zhang</h1>
                 <p className="text-base text-terracotta font-medium mb-1">Applied Scientist, Amazon</p>
-                <p className="text-sm text-muted-foreground">
-                  Ph.D. in Machine Learning, Georgia Institute of Technology
-                </p>
                 <div className="flex items-center gap-2 mt-3 text-sm text-muted-foreground">
                   <Mail className="w-3.5 h-3.5 text-terracotta" />
                   <a href="mailto:rongzhi.zhang@gatech.edu" className="hover:text-terracotta transition-colors">
