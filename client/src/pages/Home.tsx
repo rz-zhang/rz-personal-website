@@ -507,7 +507,7 @@ export default function Home() {
                 </FadeIn>
                 <FadeIn>
                   <p className="text-base lg:text-lg leading-relaxed text-foreground/85 max-w-3xl mb-4">
-                    I post-train LLMs for agentic capabilities at{" "}
+                    I post-train LLMs at{" "}
                     <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="font-medium text-terracotta hover:underline">Amazon Rufus Team</a>,
                     working across data, harness, and training recipes. My current work focuses on RL for general capabilities and agentic search.
                   </p>
