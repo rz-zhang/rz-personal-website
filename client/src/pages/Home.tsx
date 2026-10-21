@@ -118,6 +118,30 @@ const NAV_ITEMS = [
 // Publications data
 const PREPRINTS = [
   {
+    title: "Rufus-Air: An Open LLM Post-Training Recipe",
+    authors: "Amazon Rufus Team.",
+    venue: "Technical Report on ArXiv",
+    year: "2026",
+    first: true,
+    url: "https://arxiv.org/pdf/2609.29421",
+  },
+  {
+    title: "AlphaBet: Reinforcement Learning for LLM Event Forecasting Agents",
+    authors: "Liqin Ye, Rongzhi Zhang, Xin Liu, Zheng Li, Yuan He, Qingyu Yin, Priyanka Nigam and Chao Zhang.",
+    venue: "Preprint on ArXiv",
+    year: "2026",
+    first: true,
+    url: "https://arxiv.org/pdf/2610.22684",
+  },
+  {
+    title: "Forecast-Dojo: Replayable Environments for Benchmarking and Training LLM Forecasting Agents",
+    authors: "Liqin Ye, Haorui Wang, Fardin Ahmed, Rongzhi Zhang, Yuan He, Ziyuan Lin, Yanbin Yin, Jing Peng, Michael Galarnyk, Sudheer Chava and Chao Zhang.",
+    venue: "Preprint on ArXiv",
+    year: "2026",
+    first: true,
+    url: "https://arxiv.org/pdf/2609.28876",
+  },
+  {
     title: "Precise Attribute Intensity Control in Large Language Models via Targeted Representation Editing",
     authors: "Rongzhi Zhang*, Liqin Ye*, Yuzhao Heng, Xiang Chen, Tong Yu, Lingkai Kong, Sudheer Chava and Chao Zhang.",
     venue: "Preprint on ArXiv",
