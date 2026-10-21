@@ -119,7 +119,7 @@ const NAV_ITEMS = [
 const PREPRINTS = [
   {
     title: "Rufus-Air: An Open LLM Post-Training Recipe",
-    authors: "Amazon Rufus Team.",
+    authors: "Chia-Yuan Chang, Renyuan Cheng, Rui Feng, Xiaotian Han, Yuan He, Hongye Jin, Linwei Li, Shiyang Li, Fenglin Liu, Xin Liu, Priyanka Nigam, Haoyang Wen, Zhenghao Xu, Zhuocheng Xu, Bing Yin, Qingyu Yin, Chao Zhang, Rongzhi Zhang, Zhihan Zhang, Zixuan Zhang, Zixuan Zhang, Tuo Zhao (alphabetical order)",
     venue: "Technical Report on ArXiv",
     year: "2026",
     first: true,
