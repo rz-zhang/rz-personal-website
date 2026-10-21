@@ -110,7 +110,7 @@ const NAV_ITEMS = [
   { id: "publications", label: "Publications" },
   { id: "experience", label: "Experience" },
   { id: "education", label: "Education" },
-  { id: "teaching", label: "Teaching" },
+  // { id: "teaching", label: "Teaching" },
   { id: "service", label: "Service" },
   { id: "misc", label: "Misc" },
 ];
@@ -718,7 +718,7 @@ export default function Home() {
           </section>
 
           {/* Teaching Section */}
-          <section
+          {/* <section
             id="teaching"
             className="px-6 sm:px-10 lg:px-16 py-14 lg:py-20 bg-warm-card/50"
             style={{ scrollMarginTop: "80px" }}
@@ -744,7 +744,7 @@ export default function Home() {
                 ))}
               </div>
             </AnimatedSection>
-          </section>
+          </section> */}
 
           {/* Academic Service Section */}
           <section
@@ -831,7 +831,7 @@ export default function Home() {
                 </FadeIn>
                 <FadeIn>
                   <p className="text-foreground/80 leading-relaxed">
-                    I'm an <a href="https://en.wikipedia.org/wiki/Ark_Nova" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Ark Nova</a> fan and somehow stole a few wins from the champion on Board Game Arena.
+                    I'm an <a href="https://en.wikipedia.org/wiki/Ark_Nova" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Ark Nova</a> fan and somehow stole a few wins from the world champion on Board Game Arena.
                   </p>
                 </FadeIn>
               </div>
